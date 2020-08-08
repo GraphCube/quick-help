@@ -1,0 +1,795 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infinite Printing Business Card Generator</title>
+<link href="help.css" rel="stylesheet" type="text/css">
+<link href="images/IPicon.ico" rel="shortcut icon">
+<link rel="apple-touch-icon" href="images/IPiconAT.png" />
+<script type="text/javascript" src="library/mobileMenu.js"></script>
+<script type="text/javascript" src="library/scrollMe.js"></script>
+<script type="text/javascript" src="library/MyPrint.js"></script>
+<script type="text/javascript" src="library/toggle.js"></script>
+<script type="text/javascript" src="library/magnify.js"></script>
+</head>
+<body>
+<div id="dhtmltooltip"></div>
+<script type="text/javascript" src="library/hover.js"></script>
+<div id="menuFloat" style="float:right;position:relative;">
+<script type="text/javascript">  
+    floatingMenu.add('menuFloat',  
+        {  
+            // Represents distance from left or right browser window  
+            // border depending upon property used. Only one should be  
+            // specified.  
+            targetLeft: 0,  
+            // targetRight: 0,  
+  
+            // Represents distance from top or bottom browser window  
+            // border depending upon property used. Only one should be  
+            // specified.  
+            targetTop: 0,  
+            // targetBottom: 0,  
+  
+            // Uncomment one of those if you need centering on  
+            // X- or Y- axis.  
+            // centerX: true,  
+            // centerY: true,  
+  
+            // Remove this one if you don't want snap effect  
+            snap: true  
+        });  
+</script>
+    <!-- FLOATING MENU -->
+<div id="floatingMenu">
+    <!--- MOBILE ONLY MENU --->
+
+    <fieldset style="border:1px silver solid;right:1px;top:10px;position:absolute;overflow:hidden;z-index: 100;opacity:0.95;filter:Alpha(opacity=95);padding:4px;margin-left:2px;margin-right:2px;text-align:center;" class="roundBorder4">
+        <legend class="f10" style="color: black;"> MENU </legend>
+        
+            <div id="pm1" class="f11 pointer bxList" onClick="displayMe(1,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;background-color:#007700;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Quick Guide Introduction</div>')" onMouseout="hideddrivetip()">1</div>
+        
+            <div id="pm2" class="f11 pointer bxList" onClick="displayMe(2,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Login to the App</div>')" onMouseout="hideddrivetip()">2</div>
+        
+            <div id="pm3" class="f11 pointer bxList" onClick="displayMe(3,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Create &amp; Save Business Cards</div>')" onMouseout="hideddrivetip()">3</div>
+        
+            <div id="pm4" class="f11 pointer bxList" onClick="displayMe(4,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Edit &amp; Order Business Cards</div>')" onMouseout="hideddrivetip()">4</div>
+        
+            <div id="pm5" class="f11 pointer bxList" onClick="displayMe(5,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Modify &amp; Review Orders</div>')" onMouseout="hideddrivetip()">5</div> 
+        
+            <div id="pm6" class="f11 pointer bxList" onClick="displayMe(6,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Re-Ordering Business Cards</div>')" onMouseout="hideddrivetip()">6</div> 
+        
+            <div id="pm7" class="f11 pointer bxList" onClick="displayMe(7,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Administrative Functions</div>')" onMouseout="hideddrivetip()">7</div> 
+        
+            <div id="pm8" class="f11 pointer bxList" onClick="displayMe(8,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Printing Business Card Orders</div>')" onMouseout="hideddrivetip()">8</div>
+        
+            <div id="pm9" class="f11 pointer bxList" onClick="displayMe(9,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Generating Reports</div>')" onMouseout="hideddrivetip()">9</div>
+        
+            <div id="pm10" class="f11 pointer bxList" onClick="displayMe(10,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 0px 4px 0px;line-height:20px" onMouseover="ddrivetip('<div style=\'padding:4px;\'>Managing App Users</div>')" onMouseout="hideddrivetip()">10</div> 
+        
+            </fieldset>
+    <br>
+ 
+
+<!---//END MOBILE ONLY MENU --->
+</div>
+    <!-- //END FLOATING MENU -->
+</div>
+
+<div id="container" style="width:100%;">
+
+<!---BENGIN CONTENT--->
+    <!-- onclick="toggle('MobileMenuContent'); -->
+<div id="ContentContainer" style="box-sizing:border-box;padding:0px 44px 0px 5px;width:100%;" class="f14">
+
+
+<b class="f20" style="color:#3E3E3E;">Business Card App - Quick Guide</b>
+<br clear="all"><br>
+
+
+<!-- RESULTS CONTAINER -->
+    <div id="resultsContainer">
+    
+    <!-- help01 -->
+        <fieldset style="border:0px #575757 solid;background-color:#DDDDDD;" id="helpTopic1" class="roundBorder8"> 
+
+    <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+        Quick Guide Introduction
+    </legend>
+    <div id="Lcontent" class="grid2" style="margin-right:4px;">
+        <b class="f15">Introduction</b><br>
+        This Quick Guide is for the online Business Card App Version 3.0. Each of the following key functions will help you get started using the the App:</p>
+        
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(1,11)" title="View Topic: Quick Guide Introduction" onMouseOver="document.getElementById('help01').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help01').style.backgroundColor='#FF0004';"><div id="help01" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">1</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Quick Guide Introduction</div></div><br clear="left">
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(2,11)" title="View Topic: Login to the App" onMouseOver="document.getElementById('help02').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help02').style.backgroundColor='#FF0004';"><div id="help02" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">2</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Login to the App</div></div><br clear="left">
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(3,11)" title="View Topic: Create &amp; Save Business Cards" onMouseOver="document.getElementById('help03').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help03').style.backgroundColor='#FF0004';"><div id="help03" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">3</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Create &amp; Save Business Cards</div></div><br clear="left">
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(4,11)" title="View Topic: Edit &amp; Order Business Cards" onMouseOver="document.getElementById('help04').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help04').style.backgroundColor='#FF0004';"><div id="help04" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">4</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Edit &amp; Order Business Cards</div></div><br clear="left">   
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(5,11)" title="View Topic: Modify &amp; Review Orders" onMouseOver="document.getElementById('help05').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help05').style.backgroundColor='#FF0004';"><div id="help05" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">5</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Modify &amp; Review Orders</div></div><br clear="left">
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(6,11)" title="View Topic: Re-Ordering Business Cards" onMouseOver="document.getElementById('help06').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help06').style.backgroundColor='#FF0004';"><div id="help06" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">6</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Re-Ordering Business Cards</div></div><br clear="left">
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(7,11)" title="View Topic: Administrative Functions" onMouseOver="document.getElementById('help07').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help07').style.backgroundColor='#FF0004';"><div id="help07" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">7</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Administrative Functions</div></div><br clear="left">
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(8,11)" title="View Topic: Printing Business Card Orders" onMouseOver="document.getElementById('help08').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help08').style.backgroundColor='#FF0004';"><div id="help08" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">8</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Printing Business Card Orders</div></div><br clear="left">    
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(9,11)" title="View Topic: Generating Reports" onMouseOver="document.getElementById('help09').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help09').style.backgroundColor='#FF0004';"><div id="help09" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">9</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Generating Reports</div></div><br clear="left">    
+
+        <div style="float: left;margin-left: 10px;margin-bottom: 4px;" class="pointer" onClick="displayMe(10,11)" title="View Topic: Managing App Users" onMouseOver="document.getElementById('help10').style.backgroundColor='#007700';" onMouseOut="document.getElementById('help10').style.backgroundColor='#FF0004';"><div id="help10" style="display:inline-block;width:20px;height:20px;border-radius:10px;vertical-align: middle;text-align:center;float:left;background-color:#FF0004;color:white;margin:0px 0px 2px 0px;line-height:20px" class="f11">10</div><div style="display:inline-block;margin:0px 0px 0px 5px;">Managing App Users</div></div><br clear="left">
+
+        <!--<br>
+        <img src="images/iconHelpBlue24.png" style="vertical-align: middle;margin-top:-2px;margin-right:4px;" onMouseover="ddrivetip('<b class=\'f14\'>Quick Help Navigation</b><br>Click the Menu tab for contents or use the navigation bar at the bottom to view any topic.')"
+        onMouseout="hideddrivetip()">Click the Menu tab for contents &amp; topics. -->
+            <br clear="left">
+
+    </div> <!--//END LEFT CONTENT -->
+
+    <div id="Rcontent" class="grid2">
+    
+        <fieldset style="border-width:1px;border-style:solid;border-color:navy;border-radius:8px;-moz-border-radius: 8px;-webkit-border-radius:8px;float:left;">
+        <legend class="f15"><b>Key</b></legend>
+        
+            The following icons and color schemes are used throughout the App to provide you with additional help, tips, or important information.
+            <br><br>
+            <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td style="border:0px blue solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#B6D2EE;" onMouseover="ddrivetip('<b>Note:</b> Includes additional information for the current function.')"
+            onMouseout="hideddrivetip()"><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconHelp22.png" width="22" height="22"></div><div style="display:table-cell;"><b>Note:</b> Includes additional information for the current function.</div>
+        </td>
+        </tr>
+        <tr>
+            <td style="height:6px;"></td>
+        </tr>
+        <tr>
+            <td style="border:0px blue solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#BAEFC8;" onMouseover="ddrivetip('<b>Tip:</b> Includes a special Tip to better help you complete the current function.')"
+                onMouseout="hideddrivetip()"><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconInfo22.png" width="22" height="22"></div><div style="display:table-cell;"><b>Tip:</b> Includes a special Tip to better help you complete the current function.</div>
+            </td>
+            </tr>
+            
+        <tr>
+            <td style="height:6px;"></td>
+        </tr>
+        <tr>
+        <td style="border:0px red solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#F9D68B;margin-top:8px;" onMouseover="ddrivetip('<b>Important:</b> Includes important/required information for the current function.')"
+            onMouseout="hideddrivetip()"><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconWarning22.png" width="22" height="22"></div><div style="display:table-cell;"><b>Important:</b> Includes important/required information for the current function.</div>
+        </td>
+        </tr>
+        
+        </table>
+            
+        </fieldset>
+        
+    </div>
+    
+</fieldset>
+    <!-- //END help01 -->
+        
+    <!-- help02 -->
+        <fieldset style="border:0px #575757 solid;display: none;background-color:#DDDDDD;" id="helpTopic2" class="roundBorder8"> 
+
+        <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+            Login to the App
+        </legend>
+        
+        <!-- CONTENT -->
+        
+        <div id="Lcontent" class="grid2" style="margin-right:4px;">
+        In order to use the Business Card App, you  must first logon to the portal with the User Name and the temporary Password your company representative provided to you. A sample of the App login screen is displayed here. Click the link provided to you and login to get started. Note: to use this Quick Help, you do not need to login at this time.
+        <br><br>
+        GraphCube in  partnership with Infinite Printing is the software developer and hosting  company for the App. If you have trouble logging on or if you need help with  your user name and password, please contact the App help team  at <a href="mailto:support@graphcube.com">support@graphcube.com</a> (202-257-5647) or use the online contact form on the App.
+        
+        <br clear="all"><br>
+        </div>
+            
+        <div id="Rcontent" class="grid2">
+        <fieldset id="figX" style="box-sizing: border-box;float:left;padding:8px;border:1px blue solid;margin-left:0px;margin-top:0px;" class="roundBorder8">
+            <legend style="margin-left:14px;" class="f15"><b>Sample Login Screen</b></legend>
+        
+            <div style="margin-left:5px;">
+<img src="images/iconWarning22.png" width="22" height="22" title="Login First Please" style="vertical-align:middle;padding:0px 5px 5px 0px;" onMouseover="ddrivetip('To use the Business Card App, you must be logged in.<br>Enter your user name and password to login to the App.<br>')" onMouseout="hideddrivetip()"><span class="f15">Login First Please</span><br>
+            </div>
+            <form id="sample">
+            <input type="text" name="uName" required="yes" maxlength="50" message="You must enter your user name" placeholder="User Name" title="User Name" class="IM1 f16"><img src="images/iconInfo22.png" width="22" height="22" style="vertical-align:middle;padding:0px 0px 0px 5px;" class="pointer" onMouseover="ddrivetip('You must enter the <em>User Name</em> that was provided to you.<br>Your user name is generally your Email Address.<br>')" onMouseout="hideddrivetip()"><br>
+            
+            <input placeholder="Password" type="password" name="xx" required="yes" maxlength="25" message="You must enter your password" title="Password" class="IM1 f16"><img src="images/iconInfo22.png" width="22" height="22" style="vertical-align:middle;padding:0px 0px 0px 5px;" class="pointer" onMouseover="ddrivetip('You must enter your password.<br>Your password <em>is Case Sensitive</em>.<br>')" onMouseout="hideddrivetip()">
+            <br clear="all">
+            
+            <a href="javascript:void(0);" class="f16 btnGR" style="width:100px;" title="Login" onMouseover="ddrivetip('Click this Login button to Login to the App. (This is a Sample only)<br>')" onMouseout="hideddrivetip()">Login</a>
+            <a href="javascript:void(0);" class="f16 btnGR" style="margin-left:10px;width:100px;" title="Clear" onMouseover="ddrivetip('Click this Clear button to clear your user name and password in the boxes above. (This is a Sample only)<br>')" onMouseout="hideddrivetip()" onClick="document.getElementById('sample').reset();">Clear</a>
+            </form>
+            </fieldset>
+            </div>
+        <br clear="all">
+        </fieldset>
+    <!--// END help02 -->
+        
+    <!-- help03 -->
+        <fieldset style="border:0px #575757 solid;display:none;background-color:#DDDDDD;" class="roundBorder8" id="helpTopic3"> 
+
+            <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+                Create &amp; Save Business Cards
+            </legend>
+
+        <!-- CONTENT -->
+
+        <div id="Lcontent" class="grid2" style="margin-right:4px;">
+            <b class="f15">Create Business Card</b><br>To create a new business card, you must first be logged in to the App. Click the Menu tab on the right, and click the New Business Card link. Click the Menu tab again to hide the menu. Enter the business card owner information in the Build Card form area (See Figure #1). As you are typing the business card information, the Review Card area on the right is updated with the information you enter so you can see how your business card will look. You can continue to add and/or change information in the Build Card area. Note that the formatting for your company is already preset in the Review Card area. 
+        <br>
+        <br>
+            <b class="f15">Save Business Card</b><br>
+            When you are finished entering your card data and you are satisfied with your card, click the Save Card button at the bottom of the Build Card menu to save your business card.
+            <br><br>
+            <b>Getting Help:</b> In the Build Card area, most of the form field items have context-sensitive help and tips located in the small blue icons. Hover over these icons with your mouse/cursor to get an online popup menu with help and examples about the adjacent item. Place your cursor over <img src="images/iconInfo22.png" width="16" height="16" class="pointer" style="vertical-align:middle;padding:0px 0px 0px 3px;" onMouseover="ddrivetip('<b class=\'required\'> Required </b><br>Enter your <b>First &amp; Last Names and any Certifications</b> as you want them to appear on your business card.<br><br><span class=yellow>Example: Mary Smith, PMP</span><br>')" onMouseout="hideddrivetip()"> to view an example in-line tip.
+        <br><br>
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td style="border:0px blue solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#B6D2EE;">
+            <div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;">
+                <img src="images/iconHelp22.png" width="22" height="22"></div><div style="display:table-cell;"><b>Note:</b> If you need to start from fresh and clear all data in the Build Business Card area, click the Menu tab and New Business Card link again and all form data will be cleared.</div>
+        </td>
+        </tr>
+        </table>
+
+        </div> <!-- //END Lcontent -->
+
+
+        <div id="Rcontent" class="grid2">
+        <fieldset id="fig1" style="box-sizing: border-box;float:right;padding:8px;border:1px blue solid;margin-left:0px;margin-top:10px;" class="roundBorder8">
+            <legend style="margin-left:14px;" class="f15"><b>Figure #1:</b> Build New Business Card</legend>
+        
+            <div class="img-magnifier-container">
+            <img src="help/help01.JPG" id="help01img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: Build a New Business Card Sample" onMouseOver="magnify('help01img',2);">
+            </div>
+            </fieldset>
+        </div>    
+        </fieldset>
+    <!--// END help03 -->
+        
+    <!-- help04 --> 
+        <fieldset style="border:0px #575757 solid;display: none;background-color:#DDDDDD;" id="helpTopic4" class="roundBorder8"> 
+
+            <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+                Edit &amp; Order Business Cards
+            </legend>
+
+        <!-- CONTENT -->
+
+        <div id="Lcontent" class="grid2" style="margin-right:4px;">
+        <b class="f15">Edit Business Card</b>
+            <br>
+            To edit an existing business card and/or to place an order for business card printing, click the Menu tab on the right and then click the Edit/Order Business cards link. A listing of your business cards (as well as all cards from your company or companies--<em>Administrators only</em>) is displayed in the left My Cards menu area. Click the Card Owner Name link to edit/order a card (see Figure #2). At the bottom of the View Card area, there are three buttons with the following possible Functions and 2 different Cases:
+        <br><br>
+        
+        <fieldset style="border-width:1px;border-style:solid;border-color:#575757;border-radius:8px;-moz-border-radius: 8px;-webkit-border-radius:8px;float:left;" class="f12">
+        <legend class="f14" style="margin-left:14px;"><b>Case 1</b></legend>
+        This case is when the selected business card has not yet been ordered for printing; or, the order has already been completed and printed. All card details are available for editing and saving.<br><br>
+
+        <a href="javascript:void(0)" class="mediumT3 btnGR">Edit Card</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="mediumT3 btnGR">Order Card</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="mediumT3 btnGR">Print Card</a>
+        <br><br>
+        <span class="uMe">Edit Button:</span> Click this button to edit card holder information for the displayed Business Card.
+        <br><br>
+        <span class="uMe">Order Button:</span> Click this button to place an order for business card printing (see Order Card below).
+        <br><br>
+        <span class="uMe">Print Button:</span> Click this button to see a <em>print view</em> of the selected business card.
+        <br><br>
+
+        </fieldset>
+        
+        <br>
+
+        
+        <fieldset style="border-width:1px;border-style:solid;border-color:#575757;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;float:left;margin-top:10px;" class="f12">
+        <legend class="f14" style="margin-left:14px;"><b>Case 2</b></legend>
+        This case is when the selected business card has already been ordered and is currently scheduled for printing. Card details are NOT available for editing until after the card has been printed.<br><br>
+        <a href="javascript:void(0)" class="mediumT3 btnGR"><img src="images/iconNo.png" width="16" height="16" style="vertical-align:middle;margin-top:-2px;padding-right:6px;cursor:default;">Edit Card</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="mediumT3 btnGR"><img src="images/iconYes.png" width="16" height="16" style="vertical-align:middle;margin-top:-2px;padding-right:6px;cursor:default;">Review Order</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="mediumT3 btnGR">Print Card</a>
+        <br><br>
+        <span class="uMe">Edit Button:</span> Becasue your card is currently being printed, you cannot edit your card at this time.
+        <br><br>
+        <span class="uMe">Review Order Button:</span> Click this button to review your business card order. If your order has not yet printed, you can edit the order (see Review &amp; Modify Existing Orders in next section for instructions).
+        <br><br>
+        <span class="uMe">Print Button:</span> Click this button to see a <em>print view</em> of the selected business card.
+        <br><br>
+        </fieldset>
+        
+            </div> <!-- //END LEFt CONTENT EDIT -->
+
+        <div id="Rcontent" class="grid2">
+
+               <fieldset id="fig2" style="box-sizing:border-box;float:right;padding:8px;border:1px blue solid;margin-left:4px;" class="roundBorder8">
+            
+                   <legend style="margin-left:14px;" class="f15"><b>Figure #2:</b> Edit &amp; Order Business Cards</legend>
+                   
+                <div class="img-magnifier-container">
+                <img src="help/help02.JPG" id="help02img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: Edit &amp; Order Business Cards Sample" onMouseOver="magnify('help02img',2);">
+                    <!-- onClick="dynWindow('help/help02.JPG',896,580)" -->
+                </div>
+        </fieldset>
+            </div> <!-- //END RIGHT CONTENT EDIT -->
+        <br clear="all">
+            <br>
+            <hr class="navy" style="height:2px;background-color:navy;color:navy;">
+        <br>
+        <div id="Lcontent2" class="grid2" style="margin-right:4px;">
+
+        <b class="f15">Order Business Card</b>
+            <br>
+            To place and order for your business card printing, follow the procedures above by clicking on the Business Card Owner Name link in the left menu area. Beneath the View Card area, click the Order Card button and complete the order information (see Figure #3). 
+        <br><br>
+        <span class="uMe">Ordering Instructions</span><br>
+        <ol type="1">
+        <li><em>Quantity Ordered:</em> Type in the number of cards you want printed. Mimimum is 250 cards. Use numbers only.</li>
+        <li><em>Contract:</em> From the drop down list, select the Contract Name associated with your order. If you do not see your contract listed, select Other or None.</li>
+        <li><em>Send Printed Cards Here:</em> Type in your mailing (postal) address where you want your business cards to be mailed to. Include your name or C/O, street address, room or box number (if any), city, state and zip code.</li>
+        <li><em>Approve Order:</em> If you are an administrator, you will see this box, if you are NOT an administrator, you will NOT see this box. For administrators, please either select Yes or No to approve or disapprove the order.</li>
+        </ol>
+            
+               
+        <fieldset style="margin-top:8px;padding:6px;border:0px blue solid;background-color:#F9D68B;" class="roundBorder8">
+       
+            <div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconWarning22.png" width="22" height="22"></div><div style="display: table-cell;"><b>Important:</b> When finished making your order, please review it to ensure it is accurate. Once accurate, click the Place Order button to place your order for Business Card printing. Your order will now be scheduled for printing. If at any time before your order is printed you need to modify your order, follow this instructions in the Review &amp; Modify Existing Orders below.</div>
+            </fieldset>
+            <br clear="all">
+
+            </div><!-- //END Lcontent -->
+
+        <div id="Rcontent2" class="grid2">
+
+
+                <fieldset id="fig3" style="box-sizing: border-box;float:right;border:1px blue solid;padding:8px;margin-top:10px;" class="roundBorder8">
+                    <legend style="margin-left:14px;" class="f15"><b>Figure #3:</b> Order Business Cards</legend>
+
+            <div class="img-magnifier-container">
+            <img src="help/help03.JPG" id="help03img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: Order Business Cards Sample" onMouseOver="magnify('help03img',2);">
+            </div>
+        </fieldset>
+
+
+            </div><!-- //END Rcontent -->
+
+    </fieldset>
+    <!--// END help04 -->    
+        
+    <!-- help5 -->
+        <fieldset style="border:0px #DCD4C7 solid;background-color:#DDDDDD;display: none;" id="helpTopic5" class="roundBorder8"> 
+
+            <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+                Modify &amp; Review Orders
+            </legend>
+        <!-- DCD4C7 -->
+        <!-- CONTENT -->
+
+        <div id="Lcontent" class="grid2" style="margin-right:4px;">
+        <b class="f15">Modify Order</b><br>
+        If your existing business card order has not yet been printed, you can make modifications to your order including the following four areas: 1. Quantity Ordered; 2. Approved (Yes/No) (administrator only); 3. Mail Cards To address; and 4. Contract Information. To modify an existing order, follow these instructions (also see Figure #4):<br>
+
+        <ol type="1">
+        <li>Click the Menu tab on the right of the screen to show the menu selections.</li>
+        <li>Click the Review Orders link in the Menu tab.</li>
+        <li>Click the Business Cardholder name in the My Current Orders menu list on the left of the screen to display the order.</li>
+        <li>Click the Edit button beneath the Order Details preview area in the middle of your screen. This button is beneath your order details and above your business card preview.</li>
+        <li>Edit the order information as needed.</li>
+        </ol>
+
+          <b class="f15">Review Order</b><br>
+        When you have finished editing the order, make sure to review the details you edited, and if correct, click the Save Order button to save your edits. You business card order is now modified and scheduled for printing.    
+        <br clear="left">
+
+        <table border="0" style="margin-top:8px;margin-bottom:8px;">
+        <tr>
+            <td style="border:0px blue solid;padding:6px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:8px;background-color:#B6D2EE;" ><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconHelp22.png" width="22" height="22" style="padding:0px 4px 0px 0px;float:left;" alt="Information Icon"></div><div style="display: table-cell;"><b>Note:</b> If during your order modification, you set the Approved status to No, then your card is modified when you save the card, but the card is NOT scheduled for printing. Only Approved cards will be scheduled for printing.</div><br>
+            <fieldset style="border:1px navy solid;margin-left:25px;width:inherit;" class="roundBorder8">
+                <legend>Status Icons</legend>
+                <div style="vertical-align: middle;line-height: 16px;float:none;margin-top:5px;">
+                    <img src="images/iconNo.png" width="16" height="16" style="vertical-align: middle;margin-top:-4px;" alt="Status Icon: Not Approved"> Business card is <b>not approved</b> for printing
+                </div>
+
+                <div style="vertical-align: middle;line-height: 16px;float:none;margin-top:5px;">
+                    <img src="images/iconYes.png" width="16" height="16" style="vertical-align: middle;margin-top:-4px;" alt="Status Icon: Approved"> Business card <b>is approved</b> for printing
+                </div>
+
+            </fieldset>
+        </td>
+        </tr>
+        </table>
+
+            </div> <!--//END LEFt CONTENT -->
+
+        <div id="Rcontent" class="grid2">
+
+            <fieldset id="fig4" style="box-sizing:border-box;float:right;padding:8px;border:1px blue solid" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #4:</b> Modify Business Card Order</legend>
+        
+                <div class="img-magnifier-container">
+                <img src="help/help04.JPG" id="help04img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: Modify Business Card Order" onMouseOver="magnify('help04img',2);">
+                </div>
+        </fieldset>
+
+        </div> <!--// END RIGHT CONTENT -->
+
+        
+    </fieldset>
+    <!--// END help5 --> 
+    
+    <!-- help6 -->
+        <fieldset style="border:0px #575757 solid;display: none;background-color:#DDDDDD;" id="helpTopic6" class="roundBorder8"> 
+
+        <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+            Re-Ordering Business Cards
+        </legend>
+
+        <!-- CONTENT -->
+        <div id="Lcontent" class="grid2" style="margin-right:4px;">
+        <b class="f15">View &amp; Select Business Card</b><br>
+        To view and select an existing businness card for re-ordering, follow the steps below (see Figure #5):
+        <br>
+        <ol type="1">
+        <li>Click on the Menu tab on the right of the screen to open the menu.</li>
+        <li>Click on the Review Orders link in the menu tab</li>
+        <li>On the Review Orders page, click the Show Completed Orders link in the left hand My Completed Orders menu. </li>
+        <li>To select a completed order, click the the selected Cardholder name to display the Business Card in the Order Details area.</li>
+        </ol>
+
+        <b class="f15">Re-order Business Card</b><br>
+            To re-order the selected Business Card, click the <button class="f12 btnGR" title="Order Card" style="padding:2px;"><img src="images/add.png" width="16" height="16" style="vertical-align:middle;margin-top:-2px;padding-right:6px;cursor:pointer;">Order Card Again </button> button at the bottom of the Order Details area. Complete all the Order details as described in the ordering steps below (Review Topic 4 if you need more assistance).
+            <br clear="left">
+            <div class="uMe" style="float:none;margin-top:10px;">Ordering Steps</div>
+        <ol type="1">
+        <li><em>Quantity Ordered:</em> Type in the number of cards you want printed. Mimimum is 250 cards. Use numbers only.</li>
+        <li><em>Contract:</em> From the drop down list, select the Contract Name associated with your order. If you do not see your contract listed, select Other or None.</li>
+        <li><em>Send Printed Cards Here:</em> Type in your mailing (postal) address where you want your business cards to be mailed to. Include your name or C/O, street address, room or box number (if any), city, state and zip code.</li>
+        <li><em>Approve Order:</em> If you are an administrator, you will see this box, if you are NOT an administrator, you will NOT see this box. For administrators, please either select Yes or No to approve or disapprove the order.</li>
+        </ol>
+
+        <table border="0">
+        <tr>
+            <td style="border:0px blue solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#B6D2EE;"><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconHelp22.png" width="22" height="22" style="padding:0px 4px 0px 0px;float:left;"></div><div style="display: table-cell;"><b>Note:</b> In the View &amp; Re-Order Completed Orders page, a view of the business card for the order selected is displayed below the Order Details. This is an archived view of the card. If you need to edit your card, follow the instructions in Edit Card above. Please note, completed orders will always retain the archive version of the business card that was printed.</div>
+        </td>
+        </tr>
+        </table>
+        <br clear="left">
+        </div> <!--// END LEFT CONTENT -->
+
+        <div id="Rcontent" class="grid2">
+            <fieldset id="fig5" style="box-sizing:border-box;float:right;padding:8px;border:1px blue solid;" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #5:</b> View/Re-Order Completed Orders</legend>
+            <div class="img-magnifier-container">
+            <img src="help/help05.JPG" id="help05img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: View/Re-Order Completed Orders" onMouseOver="magnify('help05img',2);">
+                </div>
+            </fieldset>
+        </div><!--//END RIGHT CONTENT -->
+    </fieldset>
+    <!--// END help6 -->    
+        
+    <!-- help7 -->
+        <fieldset style="border:0px #575757 solid;display:none;background-color:#DDDDDD;" id="helpTopic7" class="roundBorder8"> 
+
+        <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+            Administrative Functions
+        </legend>
+
+        <!-- CONTENT -->
+
+        <div id="Lcontent" class="grid2" style="margin-right:4px;">
+        <b class="f15">Approving Orders</b><br>    
+        If you are an Administrator for your Company, your primary responsibility on the App is to <em>approve</em> business card orders made by your staff on this App. By default, all business card orders made by users are NOT approved until an Administrator approves each order.
+        <br><br>
+        Follow the steps below to View &amp; Approve Orders (see Figure #6):<br>
+
+        <ol type="1">
+        <li>Click the Menu tab on the right to open the menu.</li>
+        <li>Click the Review Orders link.</li>
+        <li>Your Current Orders are listed in the left My Current Orders menu. Please Note the following:
+            <br clear="left">
+            <table style="margin-top:8px;">
+                <tr>
+                    <td valign="middle"><img src="images/greenCheck.png" style="vertical-align: middle;margin-right:5px;" width="32" height="32"></td>
+                    <td valign="middle">Order has been approved already. You can still edit the order details if you need.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="middle"><img src="images/quit.png" width="32" height="32" style="vertical-align: middle;margin-right:5px;"></td>
+                    <td valign="middle">Order has NOT been approved yet. This order is Awaiting your review and approval.
+                    </td>
+                </tr>
+             </table>
+        </li>
+        <li>Click on the Order from the My Current Orders list that you want to approve/edit</li>
+        <li>In the Order Details Window, click on the Edit Order button towards the bottom of the Order Details and just above the Card View.</li>
+        <li>Edit the required information. 
+            <ul>
+                <li>Number of Cards</li>
+                <li>Approval (Yes/No)</li>
+                <li>Card Mail to Address</li>
+                <li>Date Printed</li>
+                <li>Date Mailed</li>
+                <li>Contract</li>
+            </ul>
+        </li>
+        <li>When completed, click the Save Order button to save your edits. If you approved the order, the Green Check icon will show next to the Cardholder name in the My Current Orders list</li>
+        </ol>
+
+        </div> <!--// END LEFT CONTENT -->
+
+
+        <div id="Rcontent" class="grid2">
+
+            <fieldset id="fig6" style="box-sizing:border-box;float:right;padding:8px;border:1px blue solid;" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #6: </b>Approving Orders</legend>
+                <div class="img-magnifier-container">
+                <img src="images/help06a.PNG" id="help06img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px;" title="Click to View Full Size: Approving Orders" onMouseOver="magnify('help06img',2);">
+                </div>
+            </fieldset>
+
+
+            </div> <!--// END RIGHT CONTENT -->
+
+        </fieldset>
+    <!--// END help7 -->    
+        
+    <!-- help8 -->
+        <fieldset style="border:0px #575757 solid;display:none;background-color:#DDDDDD;
+" id="helpTopic8" class="roundBorder8"> 
+
+        <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+            Printing Business Card Orders
+        </legend>
+
+            <!-- CONTENT -->
+
+            <div id="Lcontent" class="grid2" style="margin-right:4px;">
+            <b class="f15">Printing</b><br> 
+            To print business cards, follow the instructions below and see Figure #7.<br>
+
+            <ol type="1">
+            <li>Click the Menu tab on the right of the screen to expand the menu options.</li>
+            <li>Click the Review Orders Link in the menu tab.</li>
+
+                <table border="0" cellspacing="4px">
+                    <tr>
+                        <td valign="top" style="width:25px;text-align: left;"><img src="images/printer.png" style="width:16px;height:16px;">
+                        </td>
+
+                        <td valign="top">Click the Print icon next to the cardholder name in the My Current Orders List.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top" style="width:25px;text-align: left"><img src="images/iconYes.png" style="width:16px;height:16px">
+                        </td>
+                        <td valign="top" style="margin">This green checkmark icon indicates that a business card order has been approved by an administrator and is ready for printing.
+                        </td>
+                    </tr>
+                     <tr>
+                        <td valign="top" style="width:25px;text-align: left"><img src="images/iconNo.png" style="width:16px;height:16px">
+                        </td>
+                        <td valign="top">This red X icon indicates that a business card order has not yet been approved by an administrator and is not yet ready for printing.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top" style="width:25px;text-align:left;"><img src="images/iconUp2.png" style="width:18px;height:18px;">
+                        </td>
+
+                        <td valign="top">Click the Show Completed Orders link next to Up/Down icon to show an alphabectic list of completed orders. Find the cardholder order you want and click the Print icon next to your selected carholder name.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="width:25px;text-align: left"><img src="images/iconDone.png" style="width:16px;height:16px">
+                        </td>
+                        <td valign="top">This black checkmark icon indicates that a business card order has already been printed.
+                        </td>
+                    </tr>
+                </table>
+
+            <li>When you click the Print icon for your selected carholder, a new window with only the business card will open in your web browser. You can print this window or save it as a PDF. See Firuge #8 for a sample business card as well as some helpfull tips in the Tip box below.</li>
+            </ol>
+            <table border="0">
+            <tr>
+                <td style="border:0px blue solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#BAEFC8;"><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;"><img src="images/iconInfo22.png" width="22" height="22" style="padding:0px 4px 0px 0px;float:left;"></div><div style="display: table-cell;"><b>Tip:</b> When you click the print icon <img src="images/printer.png" width="16" height="16" align="absmiddle"> for a selected business card, this will open a new window that shows ONLY the business card. At this point, you can click Save for the print view and select "save as PDF" so you can import the card information into your Adobe&reg; Illustrator&trade; or other printing software.</div>
+            </td>
+            </tr>
+            </table>
+            <br clear="all">
+                <br>
+            <table border="0">
+            <tr>
+            <td style="border:0px red solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#F9D68B;margin-top:8px;"><div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;">
+                <img src="images/iconWarning22.png" width="22" height="22" style="padding:0px 4px 0px 0px;float:left;"></div><div style="display: table-cell;"><b>Important:</b> When you have finished printing your selected business card, make sure that you enter the date printed for the order as well as the date mailed (if you have mailed the order). Entering the Date Printed will move the order from the My Current Orders list to the My Completed Orders list. To enter Date Printed and Date Mailed, click on the business cardholder name from the My Current Orders list, and in the Order Details area,  enter the dates in the required fileds using the pop-up calendar or mm/dd/yyyy format. Refer to <a href="javascript:void(0)" onMouseover="ddrivetip('<div style=\'padding:8px\'><b class=\'f16\'>View Printing Details:</b><br clear=\'all\'><br><img src=\'images/help06b.PNG\' class=\'roundBorder8\'></div>')" onMouseout="hideddrivetip()">Figure #6</a> for an example. 
+                </div>
+            </td>
+            </tr>
+            </table>
+            </div> <!--// END LEFT CONTENT -->
+
+
+
+
+            <div id="Rcontent" class="grid2">
+
+            <fieldset id="fig7" style="box-sizing:border-box;float:right;padding:8px;border:1px blue solid;margin-bottom:4px;" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #7: </b>Printing Business Cards</legend>
+                <div class="img-magnifier-container">
+                <img src="help/help07.JPG" id="help07img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: Printing Business Cards" onMouseOver="magnify('help07img',2);">
+                </div>
+            </fieldset>
+
+            <fieldset id="fig8" style="box-sizing:border-box;padding:8px;border:1px blue solid;margin-bottom:4px;"  class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #8: </b>Business Card Print View</legend>
+                <div class="img-magnifier-container">
+                <img src="help/help08.JPG" id="help08img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Click to View Full Size: Business Card Print View" onMouseOver="magnify('help08img',2);">
+                </div>
+            </fieldset>
+
+                </div><!--//END RIGHT CONTENT -->
+            
+            <br clear="all">
+                
+        </fieldset>
+    <!--// END help8 -->    
+        
+    <!-- help9 -->
+                       <fieldset style="border:0px #575757 solid;display:none;background-color:#DDDDDD;
+" id="helpTopic9" class="roundBorder8"> 
+
+        <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+            Generating Reports
+        </legend>
+
+        <!-- CONTENT -->
+         <div id="Lcontent2" class="grid2" style="margin-right:4px;">
+
+            
+            <b class="f15">Build Your Report</b><br> 
+            To build your report for the printing and shipping status of business card orders, following the instructions below and see Figure #9 as an example tracking report.
+                
+                <ol type="1">
+            <li>Click the Menu tab on the right of the screen to expand the menu options.</li>
+            <li>Click the Download Orders and Reports Link in the menu tab.</li>
+                    <li>In the Business Cards Report area (See <b>Figure #9</b>), choose a start date for your tracking report by clicking on the calendar icon in the Start Date box. Note: the start date is automatically prefilled to track orders for the current week.</li>
+                    
+                    <li>Choose an end date for your tracking report by clicking on the calendar icon in the End Date box.</li>
+                    
+                    <li>Click the Build Report button to create your Order Tracking report.</li>
+                    <li>Once your report has been generated (usually just a few seconds), a link to your report will be displayed towards the bottom of the Business Cards Report area.</li>
+                    <li>Click the Report link just generated to open and download your Orders Traccking report.</li>
+                    <li>Your tracking report includes all the order details including the number of cards printed, the print date and shipping/mailing date. See <b>Figure #10</b> for a sample report (Note: names have been obscured in this figure for privacy).</li>
+                    
+             
+                    
+                </ol>
+                
+            
+                
+
+            </div> <!--//END LEFT CONTENT 2 -->
+            
+            <div id="Rcontent2" class="grid2">
+
+            <fieldset id="fig9" style="box-sizing:border-box;padding:8px;border:1px blue solid;margin-bottom:4px;" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #9: </b>Tracking Orders</legend>
+                <div class="img-magnifier-container">
+                <img src="help/help09.PNG" id="help09img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Roll over to Zoom: Tracking Orders" onMouseOver="magnify('help09img',2);">
+                </div>
+            </fieldset>
+                 </div><!--//END RIGHT CONTENT -->
+            <br clear="all">
+            
+        <!-- BOTTOM CONTENT -->
+            <div id="bottomContent" class="grid1">
+                <fieldset id="fig10" style="box-sizing:border-box;padding:8px;border:1px blue solid;margin-bottom:4px;" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #10: </b>Sample Report (Patrial)</legend>
+                <div class="img-magnifier-container">
+                <img src="help/help10.PNG" id="help10img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Roll over to Zoom: Sample Report (Partial)" onMouseOver="magnify('help10img',2);">
+                </div>
+                    </div>
+            </fieldset>
+            </div>
+            
+    </fieldset>
+   
+    <!--// END help9 -->    
+        
+    <!-- help10 -->
+        <fieldset style="border:0px #575757 solid;display:none;background-color:#DDDDDD;
+" id="helpTopic10" class="roundBorder8"> 
+
+        <legend style="color:#3E3E3E;font-weight:600;background-color:#DDDDDD;margin-left:24px;margin-bottom:-24px;padding:5px 12px 40px 12px;" class="f16 roundBorder8">
+            Managing App Users
+        </legend>
+
+        <!-- CONTENT -->
+         <div id="Lcontent" class="grid2" style="margin-right:4px;">
+
+            
+            <b class="f15">Manage User</b><br> 
+             To manage user information and access to the Business Card App, click the Menu tab and then the Manage Users and Contracts tab. From the list of users, click  the user you wish to manage. When you click a user, account deatils for the user are displayed in the User Details area (see Figure #11). Key items you can edit are detailed below
+             
+             <ol>
+                 <li>Name/Email/Phone: type in any edits required for name, email and phone information.</li>
+                 <li>User Role: select the appropriate user role; move your cursor over the blue icon <div style="display:inline;vertical-align: middle;margin-right:0px;"><img src="images/iconHelp22.png" width="16" height="16"></div> for an explanation of each user role.</li>
+                 <li>Online Store Access: this allows you to give or remove user access to the Business Card App online store access.</li>
+                 <li>Account Status: this allows you to put the account into suspended status so that the user is not allow to access the Business Card app. You can return a user to Active status at any time.</li>
+                 <li>User Company: if you are an administrator, this allows you to assign a user to any available company.</li>
+                 <li>Login User Name: the user name is set when your account is created. This cannot be changed.</li>
+                 <li>Password: to reset a user password, move your cursor over the blue icon <div style="display:inline;vertical-align: middle;margin-right:0px;"><img src="images/iconHelp22.png" width="16" height="16"></div> and follow the instructions required to reset a password.</li>
+                 <li>Ship-to Address: these fields allow you to set a postal shipping address where a user will receive business cards. Normally, this is the users office addres, work site, or home address.</li>
+             </ol>
+             When you have completed your required user edits, click the Update User button to save your edits.
+             <br><br>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                <td style="border:0px blue solid;padding:6px;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#B6D2EE;">
+                    <div style="display:table-cell;vertical-align: middle; float:left;margin-right:5px;">
+                        <img src="images/iconHelp22.png" width="22" height="22"></div><div style="display:table-cell;"><b>Note:</b> If you need to delete a user, click the Delete User button.<button class="btnGR f12 pointer" style="display:inline;vertical-align:middle;" onclick="return confirm('WARNING! You are about to delete this User. Deletion is Final and there is no Un-Do! Are you sure?')"><img src="images/delete.png" style="vertical-align: middle;" title="Delete This User"> Delete User</button> When you click the Delete User button, you are presented with a confirmation message. To complete the Delete, click OK, to stop the Delete, click Cancel. Note: if you delete a user, there is NO undo; the user deletion is final.</div>
+                </td>
+                </tr>
+                </table>
+             <br clear="all">
+        </div>
+        
+        <div id="Rcontent2" class="grid2">
+
+            <fieldset id="fig11" style="box-sizing:border-box;padding:8px;border:1px blue solid;margin-bottom:4px;" class="roundBorder8">
+                <legend style="margin-left:14px;" class="f15"><b>Figure #11: </b>Manage User</legend>
+                <div class="img-magnifier-container">
+                <img src="help/help11.PNG" id="help11img" class="pointer" style="width:100%;border:1px #7D7D7D solid;margin:8px 0px 4px 0px" title="Roll over to Zoom: Manage User" onMouseOver="magnify('help11img',2);">
+                </div>
+            </fieldset>
+                 </div><!--//END RIGHT CONTENT -->
+            <br clear="all">
+        
+        <br clear="all">
+        
+    </fieldset>
+    <!--// END help10 -->    
+        
+    </div>
+<!--//END RESULTS CONTAINER -->
+
+<!-- NAV BAR FOR PAGE -->
+
+<!--
+<div id="navBar01" style="text-align: center;margin-top: 18px;margin-bottom: 10px;">
+    
+    <fieldset style="width:300px;border:1px silver solid;margin-left: auto;margin-right:auto;" class="roundBorder5">
+        <legend style="text-align: center;color:gray;">Quick Navigation</legend>
+    
+    
+    <div id="p1" class="f11 pointer bxList" onClick="displayMe(1,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;background-color:#007700;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Quick Guide Introduction')" onMouseout="hideddrivetip()">1</div>
+    
+      <div id="p2" class="f11 pointer bxList" onClick="displayMe(2,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Login to the App')" onMouseout="hideddrivetip()">2</div> 
+    
+    <div id="p3" class="f11 pointer bxList" onClick="displayMe(3,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Create &amp; Save Business Cards')" onMouseout="hideddrivetip()">3</div> 
+    
+    <div id="p4" class="f11 pointer bxList" onClick="displayMe(4,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Edit &amp; Order Business Cards')" onMouseout="hideddrivetip()">4</div> 
+    
+    <div id="p5" class="f11 pointer bxList" onClick="displayMe(5,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Review &amp; Modify Orders')" onMouseout="hideddrivetip()">5</div> 
+    
+    <div id="p6" class="f11 pointer bxList" onClick="displayMe(6,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Re-Ordering Business Cards')" onMouseout="hideddrivetip()">6</div> 
+    
+        <div id="p7" class="f11 pointer bxList" onClick="displayMe(7,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Administrative Functions')" onMouseout="hideddrivetip()">7</div> 
+
+        
+        <div id="p8" class="f11 pointer bxList" onClick="displayMe(8,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Printing Business Card Orders')" onMouseout="hideddrivetip()">8</div> 
+    
+    <div id="p9" class="f11 pointer bxList" onClick="displayMe(9,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Generating Reports')" onMouseout="hideddrivetip()">9</div> 
+    
+    <div id="p10" class="f11 pointer bxList" onClick="displayMe(10,11)" style="display: inline-block;text-align: center;width:20px;height:20px;border-radius:10px;color:white;margin:0px 2px 0px 2px;line-height:20px" onMouseover="ddrivetip('<b>View Topic:</b> Managing App USers')" onMouseout="hideddrivetip()">10</div> 
+    
+        
+    </fieldset>
+</div> -->
+<!--//END NAV BAR -->
+    
+    
+</div><!---//END CONTENT--->
+
+</div><!---//END CONTAINER--->
+
+</body>
+</html>
